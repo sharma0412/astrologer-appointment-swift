@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="UserImageChatTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserImageChatTableViewCell" rowHeight="80" id="KGk-i7-Jjw" customClass="UserImageChatTableViewCell" customModule="Zodium" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="igW-Da-mk6" customClass="AnimatableImageView" customModule="IBAnimatable">
+                        <rect key="frame" x="180" y="10" width="180" height="164"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="ISb-ds-PzK"/>
+                            <constraint firstAttribute="height" constant="164" id="aGu-M2-HBj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFS-b7-zDO">
+                        <rect key="frame" x="180" y="10" width="180" height="164"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="btnImageSecViewHandler:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tX6-x0-0Rn"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="igW-Da-mk6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0DF-t2-tWq"/>
+                    <constraint firstAttribute="trailing" secondItem="sFS-b7-zDO" secondAttribute="trailing" constant="15" id="LB9-EM-zgl"/>
+                    <constraint firstItem="sFS-b7-zDO" firstAttribute="width" secondItem="igW-Da-mk6" secondAttribute="width" multiplier="0.372222" constant="113" id="Onp-XQ-e9w"/>
+                    <constraint firstAttribute="bottom" secondItem="sFS-b7-zDO" secondAttribute="bottom" constant="10" id="U6c-yd-gbt"/>
+                    <constraint firstAttribute="trailing" secondItem="igW-Da-mk6" secondAttribute="trailing" constant="15" id="dIx-mX-LEz"/>
+                    <constraint firstItem="igW-Da-mk6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fF4-FG-8XZ"/>
+                    <constraint firstItem="sFS-b7-zDO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="r4d-xb-3wJ"/>
+                    <constraint firstAttribute="bottom" secondItem="igW-Da-mk6" secondAttribute="bottom" constant="10" id="s3n-df-gsa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="sendImageView" destination="igW-Da-mk6" id="ztr-5o-xni"/>
+            </connections>
+            <point key="canvasLocation" x="35.507246376811594" y="101.78571428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="39" viewBox="0 0 68 39">
+  <g id="toggle_on" transform="translate(-345 -138)">
+    <rect id="Rectangle_120" data-name="Rectangle 120" width="68" height="30" rx="15" transform="translate(345 142)" fill="#fff"/>
+    <circle id="Ellipse_22" data-name="Ellipse 22" cx="19.5" cy="19.5" r="19.5" transform="translate(345 138)"/>
+    <text id="on" transform="translate(357 161)" fill="#fff" font-size="12" font-family="SFUIDisplay-Medium, SF UI Display" font-weight="500"><tspan x="0" y="0">on</tspan></text>
+  </g>
+</svg>
